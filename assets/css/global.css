@@ -1,0 +1,161 @@
+/* Animation Keyframes */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Nouveaux Keyframes */
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate-in {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+@keyframes bounce-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Base Section Style */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    animation-fill-mode: forwards; /* Maintient les styles de fin */
+}
+
+/* Animations par section */
+#hero {
+    animation: fade-in-up 1s ease-in-out forwards;
+}
+
+#services {
+    animation: slide-in-left 1s ease-in-out forwards;
+}
+
+#testimonials {
+    animation: slide-in-right 1s ease-in-out forwards;
+}
+
+#contact {
+    animation: fade-in-up 1s ease-in-out forwards;
+}
+
+#about {
+    animation: zoom-in 1s ease-in-out forwards;
+}
+
+#portfolio {
+    animation: rotate-in 1.2s ease-in-out forwards;
+}
+
+#team {
+    animation: bounce-in-up 1.5s ease forwards;
+}
+
+/* Animation Delays for Each Section */
+section:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+section:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+section:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+section:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+
+section:nth-of-type(5) {
+    animation-delay: 1s;
+}
+
+section:nth-of-type(6) {
+    animation-delay: 1.2s;
+}
+
+section:nth-of-type(7) {
+    animation-delay: 1.4s;
+}
+
+/* Buttons Hover Effect */
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet de survol pour les liens */
+a:hover {
+    color: #ff6347; /* Changer la couleur au survol */
+    text-decoration: underline;
+    animation: pulse 0.6s ease-in-out infinite;
+}
