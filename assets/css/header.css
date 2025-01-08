@@ -21,7 +21,7 @@ body {
     line-height: 1.6;
 }
 
-.container {
+.container-nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -37,7 +37,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .container {
+header .container-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
