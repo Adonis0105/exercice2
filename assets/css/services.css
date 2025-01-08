@@ -37,3 +37,74 @@
     color: var(--primary-color);
     margin-bottom: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsiveness pour tablettes (768px et moins) */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur tablette */
+        gap: 15px;
+    }
+
+    .container-services h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .service-card i {
+        font-size: 2.5rem; /* Réduit la taille de l'icône */
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem; /* Réduit la taille du titre */
+    }
+
+    .service-card p {
+        font-size: 0.9rem; /* Texte légèrement plus compact */
+    }
+}
+
+/* Responsiveness pour mobiles (480px et moins) */
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-services h2 {
+        font-size: 1.8rem; /* Titre adapté pour les petits écrans */
+        margin-bottom: 20px;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card i {
+        font-size: 2rem; /* Icône encore plus petite */
+    }
+
+    .service-card h3 {
+        font-size: 1rem; /* Titre compact */
+    }
+
+    .service-card p {
+        font-size: 0.8rem; /* Texte compact */
+    }
+}
