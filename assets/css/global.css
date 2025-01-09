@@ -32,15 +32,13 @@
     }
 }
 
-/* Base Styling for Sections */
 section {
-    opacity: 0; /* Hidden by default */
-    transform: translateY(30px); /* Initial offset */
+    opacity: 0; 
+    transform: translateY(30px); 
     transition: opacity 1s ease, transform 1s ease;
     will-change: opacity, transform;
 }
 
-/* Specific Animations for Sections */
 #hero {
     animation: fade-in 1s ease-in-out forwards;
     animation-delay: 0.2s;
@@ -61,7 +59,6 @@ section {
     animation-delay: 0.8s;
 }
 
-/* Trigger animations when sections enter the viewport */
 @media (prefers-reduced-motion: no-preference) {
     .visible {
         opacity: 1;
