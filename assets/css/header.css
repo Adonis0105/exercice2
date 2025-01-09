@@ -1,4 +1,3 @@
-
 /* Réinitialisation de base */
 * {
     margin: 0;
@@ -8,22 +7,23 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
-    color: var(--secondary-color);
+    background-color: #f9f9f9;
+    color: #333;
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: var(--primary-color);
-    color: var(--text-color);
+    background-color: #007bff;
+    color: white;
     padding: 20px 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 5px var(--box-shadow);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
 .container-nav {
@@ -38,10 +38,16 @@ header {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--text-color);
+    color: white;
 }
 
-/* Navigation */
+/* Navigation par défaut */
+nav {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -50,18 +56,18 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--text-color);
+    color: white;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: var(--blueC-color);
+    color: #ffcc00;
 }
 
 button.signup {
-    background-color: var(--accent-color);
-    color: var(--text-color);
+    background-color: #ffcc00;
+    color: #333;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -71,16 +77,14 @@ button.signup {
 }
 
 button.signup:hover {
-    background-color: var(--hover-color);
+    background-color: #ff9900;
 }
 
-
-
-
-
-
-
 /* Bouton menu hamburger pour mobile */
+.menu-checkbox {
+    display: none; /* Masque la checkbox */
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -94,39 +98,54 @@ button.signup:hover {
     display: block;
     width: 25px;
     height: 3px;
-    background: var(--text-color);
+    background: white;
     border-radius: 2px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
-
-
-/* Responsive design */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Affiche le bouton hamburger sur mobile */
+    }
+
     nav {
-        display: none;
+        display: none; /* Masque la navigation par défaut */
         flex-direction: column;
-        background: var(--header-color);
+        background: #007bff;
         position: absolute;
         top: 100%;
         right: 0;
         width: 100%;
-        border-top: 1px solid var(--border-top);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
-        padding: 20px;
     }
 
-    .menu-toggle {
+    /* Affiche le menu lorsque la checkbox est cochée */
+    .menu-checkbox:checked ~ nav {
         display: flex;
     }
+}
 
-    .menu-toggle.active + nav {
-        display: flex;
-    }
+/* Effets du toggle */
+header:has(.menu-checkbox:checked) {
+    background-color: #0056b3;
+}
+
+.menu-checkbox:checked + .menu-toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-checkbox:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-checkbox:checked + .menu-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (max-width: 480px) {

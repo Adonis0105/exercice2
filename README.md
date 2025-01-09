@@ -93,3 +93,8 @@ Ce projet présente le landing page de **TechNova**, une entreprise spécialisé
 - **Google Fonts** : Police `Roboto` pour un design moderne.
 - **Responsivité** : Support complet des écrans mobiles, tablette, et desktop avec media queries.
 
+
+## contraintes
+
+
+- **Bouton Toogler** : ne fonctio
