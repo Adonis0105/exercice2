@@ -97,4 +97,5 @@ Ce projet présente le landing page de **TechNova**, une entreprise spécialisé
 ## contraintes
 
 
-- **Bouton Toogler** : ne fonctio
+- **Bouton Toogler** : fonctionne avec le css 
+    :has()

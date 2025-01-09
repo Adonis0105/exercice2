@@ -117,6 +117,92 @@ section {
 
 
 
+@keyframes float {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+}
+
+.bubble-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: moveBubble 10s infinite ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  
+  @keyframes moveBubble {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translate(calc(-50px + 100px * random()), calc(-50px + 100px * random()));
+      opacity: 0.6;
+    }
+    100% {
+      transform: translate(calc(-100px + 200px * random()), calc(-100px + 200px * random()));
+      opacity: 0.4;
+    }
+  }
+
+
+
+
+
+
+  .ripple {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 123, 255, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: rippleEffect 0.6s ease-out;
+}
+
+@keyframes rippleEffect {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: float 5s infinite ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
