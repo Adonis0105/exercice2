@@ -10,14 +10,38 @@
     color: var(--secondary-color);
 }
 
-#service h2::after {
-    content: '';
-    display: block;
+h2 hr {
+    
     width: 100px;
     height: 3px;
     background-color: var(--primary-color);
+    color: var(--primary-color);
     margin: 15px auto 0;
 }
+
+
+
+h2 {
+    position: relative;
+    font-size: 2rem; /* Taille du texte, ajustez selon vos besoins */
+    
+    text-align: center;
+    margin-bottom: 20px; /* Espace sous le titre */
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 90px; /* Longueur du trait */
+    height: 3px; /* Épaisseur du trait */
+    background-color: var(--primary-color); /* Couleur du trait */
+    margin: 10px auto 0; /* Espace au-dessus et centrage */
+    border-radius: 2px; /* Arrondi des bords */
+}
+
+
+
+
 .services-grid {
     display: flex;
     gap: 20px;
