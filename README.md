@@ -54,6 +54,7 @@ Ce projet présente le landing page de **TechNova**, une entreprise spécialisé
 
 ## les pallettes de couleurs utilisées
 
+    
     --primary-color: #4CAF50;
     --secondary-color: #2C3E50;
     --accent-color: #E74C3C;
@@ -65,11 +66,22 @@ Ce projet présente le landing page de **TechNova**, une entreprise spécialisé
     --blueC-color: #00bcd4;
     --hover-color: #C0392B;
     --border-top: #333;
-    --box-shadow:rgb(48, 44, 44) ;
+    --box-shadow:rgb(108, 97, 97) ;
     --box-shad2:rgba(255, 255, 255, 0.7);
     --logo-color:#ffa500;
     --signeHover-color: #ff7700;
     --bc-color : #34495e;
+    --bgContact: #f9f9f9;
+    --border-color: #ccc;
+    --shd-col-serv: rgba(0, 0, 0, 0.1);
+    --bg-col-testim: #ffffff;
+    --hov1-col-testi: rgba(0, 0, 0, 0.2);
+    --hov2-col-testi: rgba(255, 255, 255, 0.9);
+    --bg1-testi-col: #f3f3f3;
+    --bg2-testi-col:#ffffff;
+    --bCha1-testi-col:rgba(0, 0, 0, 0.1);
+    --bCha1-testi-col: rgba(255, 255, 255, 0.7);
+
 
 
 
