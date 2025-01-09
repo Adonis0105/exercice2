@@ -52,6 +52,27 @@ Ce projet présente le landing page de **TechNova**, une entreprise spécialisé
     -README.md
 
 
+## les pallettes de couleurs utilisées
+
+    --primary-color: #4CAF50;
+    --secondary-color: #2C3E50;
+    --accent-color: #E74C3C;
+    --text-color: #ffffff;
+    --background-color: #f5f5f5;
+    --header-color: #1a1a1a;
+    --black-color: black;
+    --bg-color: #0192a7;
+    --blueC-color: #00bcd4;
+    --hover-color: #C0392B;
+    --border-top: #333;
+    --box-shadow:rgb(48, 44, 44) ;
+    --box-shad2:rgba(255, 255, 255, 0.7);
+    --logo-color:#ffa500;
+    --signeHover-color: #ff7700;
+    --bc-color : #34495e;
+
+
+
 ## Technologies utilisées
 
 - **HTML5** : Structure de base.

@@ -1,5 +1,5 @@
 #testimonials {
-    background-color: #ffffff;
+    background-color: var(--bg-col-testim);
     padding: 60px 0;
     text-align: center;
 }
@@ -28,8 +28,8 @@
 }
 
 .testimonial {
-    background: linear-gradient(145deg, #f3f3f3, #ffffff);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+    background: linear-gradient(145deg, var(--bg1-testi-col), var( --bg2-testi-col));
+    box-shadow: 5px 5px 10px var(--bCha1-testi-col), -5px -5px 10px var(--bCha2-testi-col);
     padding: 20px;
     border-radius: 15px;
     max-width: 300px;
@@ -39,7 +39,7 @@
 
 .testimonial:hover {
     transform: translateY(-10px);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.9);
+    box-shadow: 10px 10px 20px var(--hov1-col-testi), -10px -10px 20px var(--hov1-col-testi);
 }
 
 .testimonial img {

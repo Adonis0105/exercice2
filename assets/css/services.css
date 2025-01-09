@@ -10,6 +10,14 @@
     color: var(--secondary-color);
 }
 
+#service h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 15px auto 0;
+}
 .services-grid {
     display: flex;
     gap: 20px;
@@ -21,7 +29,7 @@
     color: var(--secondary-color);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shd-col-serv);
     flex: 1;
     max-width: 300px;
     transition: transform 0.3s;
