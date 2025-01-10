@@ -5,21 +5,26 @@ Ce projet présente le landing page de **TechNova**, une entreprise spécialisé
 ## Fonctionnalités principales
 
 - **Header fixe avec navigation fluide** :
+
   - Logo.
   - Menu de navigation avec ancrage sur les sections.
   - Bouton d'inscription.
 
 - **Section Héros** :
+
   - Texte accrocheur pour présenter l'entreprise.
   - Vidéo en lecture automatique.
 
 - **Nos Services** :
+
   - Trois services principaux mis en avant avec icônes et descriptions.
 
 - **Témoignages** :
+
   - Témoignages de clients avec photos.
 
 - **Contactez-nous** :
+
   - Formulaire de contact.
   - Informations de contact (téléphone et email).
 
@@ -29,32 +34,30 @@ Ce projet présente le landing page de **TechNova**, une entreprise spécialisé
 
 ## Structure des fichiers
 
-   -  assets
-        -css
-            *contact.css
-            *footer.css
-            *global.css
-            *header.css
-            *hero.css
-            *responsive.css
-            *video.css
-        -img
-            *1.jpeg
-            *2.jpeg
-            *3.jpeg
-            *4.jpeg
-            *5.jpeg
-            *6.jpeg
-            *illustration.png
-        -video
-            *AdobeStock_592346871_Video_HD_Preview.mov
-    -index.com
-    -README.md
-
+- assets
+  -css
+  *contact.css
+  *footer.css
+  *global.css
+  *header.css
+  *hero.css
+  *responsive.css
+  *video.css
+  -img
+  *1.jpeg
+  *2.jpeg
+  *3.jpeg
+  *4.jpeg
+  *5.jpeg
+  *6.jpeg
+  *illustration.png
+  -video
+  \*AdobeStock_592346871_Video_HD_Preview.mov
+  -index.com
+  -README.md
 
 ## les pallettes de couleurs utilisées
 
-    
     --primary-color: #4CAF50;
     --secondary-color: #2C3E50;
     --accent-color: #E74C3C;
@@ -82,9 +85,6 @@ Ce projet présente le landing page de **TechNova**, une entreprise spécialisé
     --bCha1-testi-col:rgba(0, 0, 0, 0.1);
     --bCha1-testi-col: rgba(255, 255, 255, 0.7);
 
-
-
-
 ## Technologies utilisées
 
 - **HTML5** : Structure de base.
@@ -93,9 +93,7 @@ Ce projet présente le landing page de **TechNova**, une entreprise spécialisé
 - **Google Fonts** : Police `Roboto` pour un design moderne.
 - **Responsivité** : Support complet des écrans mobiles, tablette, et desktop avec media queries.
 
-
 ## contraintes
 
-
-- **Bouton Toogler** : fonctionne avec le css 
-    :has()
+- **Bouton Toogler** : fonctionne avec le css
+  :has()

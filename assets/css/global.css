@@ -1,211 +1,172 @@
 /* Variables CSS pour la palette de couleurs */
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #2C3E50;
-    --accent-color: #E74C3C;
-    --text-color: #ffffff;
-    --background-color: #f5f5f5;
-    --header-color: #1a1a1a;
-    --black-color: black;
-    --bg-color: #0192a7;
-    --blueC-color: #00bcd4;
-    --hover-color: #C0392B;
-    --border-top: #333;
-    --box-shadow:rgb(108, 97, 97) ;
-    --box-shad2:rgba(255, 255, 255, 0.7);
-    --logo-color:#ffa500;
-    --signeHover-color: #ff7700;
-    --bc-color : #34495e;
-    --bgContact: #f9f9f9;
-    --border-color: #ccc;
-    --shd-col-serv: rgba(0, 0, 0, 0.1);
-    --bg-col-testim: #ffffff;
-    --hov1-col-testi: rgba(0, 0, 0, 0.2);
-    --hov2-col-testi: rgba(255, 255, 255, 0.9);
-    --bg1-testi-col: #f3f3f3;
-    --bg2-testi-col:#ffffff;
-    --bCha1-testi-col:rgba(0, 0, 0, 0.1);
-    --bCha1-testi-col: rgba(255, 255, 255, 0.7);
+  --primary-color: #4caf50;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --text-color: #ffffff;
+  --background-color: #f5f5f5;
+  --header-color: #1a1a1a;
+  --black-color: black;
+  --bg-color: #0192a7;
+  --blueC-color: #00bcd4;
+  --hover-color: #c0392b;
+  --border-top: #333;
+  --box-shadow: rgb(108, 97, 97);
+  --box-shad2: rgba(255, 255, 255, 0.7);
+  --logo-color: #ffa500;
+  --signeHover-color: #ff7700;
+  --bc-color: #34495e;
+  --bgContact: #f9f9f9;
+  --border-color: #ccc;
+  --shd-col-serv: rgba(0, 0, 0, 0.1);
+  --bg-col-testim: #ffffff;
+  --hov1-col-testi: rgba(0, 0, 0, 0.2);
+  --hov2-col-testi: rgba(255, 255, 255, 0.9);
+  --bg1-testi-col: #f3f3f3;
+  --bg2-testi-col: #ffffff;
+  --bCha1-testi-col: rgba(0, 0, 0, 0.1);
+  --bCha1-testi-col: rgba(255, 255, 255, 0.7);
 }
-
-
-
-
 
 /* Keyframes Animations */
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slide-in-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes slide-in-right {
-    0% {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 section {
-    opacity: 0; 
-    transform: translateY(30px); 
-    transition: opacity 1s ease, transform 1s ease;
-    will-change: opacity, transform;
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+  will-change: opacity, transform;
 }
 
 #hero {
-    animation: fade-in 1s ease-in-out forwards;
-    animation-delay: 0.2s;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 0.2s;
 }
 
 #services {
-    animation: slide-in-left 1s ease-in-out forwards;
-    animation-delay: 0.4s;
+  animation: slide-in-left 1s ease-in-out forwards;
+  animation-delay: 0.4s;
 }
 
 #testimonials {
-    animation: slide-in-right 1s ease-in-out forwards;
-    animation-delay: 0.6s;
+  animation: slide-in-right 1s ease-in-out forwards;
+  animation-delay: 0.6s;
 }
 
 #contact {
-    animation: fade-in 1.2s ease-in-out forwards;
-    animation-delay: 0.8s;
+  animation: fade-in 1.2s ease-in-out forwards;
+  animation-delay: 0.8s;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes float {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(-100%);
-    }
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 .bubble-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .bubble {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    animation: moveBubble 10s infinite ease-in-out;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-  }
-  
-  @keyframes moveBubble {
-    0% {
-      transform: translate(0, 0);
-      opacity: 0.8;
-    }
-    50% {
-      transform: translate(calc(-50px + 100px * random()), calc(-50px + 100px * random()));
-      opacity: 0.6;
-    }
-    100% {
-      transform: translate(calc(-100px + 200px * random()), calc(-100px + 200px * random()));
-      opacity: 0.4;
-    }
-  }
-
-
-
-
-
-
-  .ripple {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: rgba(0, 123, 255, 0.5);
-    border-radius: 50%;
-    transform: scale(0);
-    animation: rippleEffect 0.6s ease-out;
-}
-
-@keyframes rippleEffect {
-    to {
-        transform: scale(4);
-        opacity: 0;
-    }
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .bubble {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.2);
-    animation: float 5s infinite ease-in-out;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: moveBubble 10s infinite ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
+@keyframes moveBubble {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(
+      calc(-50px + 100px * random()),
+      calc(-50px + 100px * random())
+    );
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(
+      calc(-100px + 200px * random()),
+      calc(-100px + 200px * random())
+    );
+    opacity: 0.4;
+  }
+}
 
+.ripple {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 123, 255, 0.5);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: rippleEffect 0.6s ease-out;
+}
 
+@keyframes rippleEffect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.4),
+    inset 0 0 10px rgba(255, 255, 255, 0.2);
+  animation: float 5s infinite ease-in-out;
+}

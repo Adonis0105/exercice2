@@ -1,6 +1,6 @@
 video {
-    width: 10%; /* Occupe toute la largeur */
-    height: 1px; /* Conserve les proportions */
-    display: block;
-    object-fit: cover; /* Remplit l'espace sans déformer la vidéo */
+  width: 10%; /* Occupe toute la largeur */
+  height: 1px; /* Conserve les proportions */
+  display: block;
+  object-fit: cover; /* Remplit l'espace sans déformer la vidéo */
 }

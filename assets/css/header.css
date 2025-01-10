@@ -1,164 +1,164 @@
 /* Réinitialisation de base */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
 .container-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
 }
 
 /* Navigation par défaut */
 nav {
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+  color: #ffcc00;
 }
 
 button.signup {
-    background-color: #ffcc00;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button.signup:hover {
-    background-color: #ff9900;
+  background-color: #ff9900;
 }
 
 /* Bouton menu hamburger pour mobile */
 .menu-checkbox {
-    display: none; /* Masque la checkbox */
+  display: none; /* Masque la checkbox */
 }
 
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    border: none;
-    background: none;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: white;
-    border-radius: 2px;
-    transition: transform 0.3s ease;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: flex; /* Affiche le bouton hamburger sur mobile */
-    }
+  .menu-toggle {
+    display: flex; /* Affiche le bouton hamburger sur mobile */
+  }
 
-    nav {
-        display: none; /* Masque la navigation par défaut */
-        flex-direction: column;
-        background: #007bff;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100%;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 20px;
-    }
+  nav {
+    display: none; /* Masque la navigation par défaut */
+    flex-direction: column;
+    background: #007bff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+  }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    /* Affiche le menu lorsque la checkbox est cochée */
-    .menu-checkbox:checked ~ nav {
-        display: flex;
-    }
+  /* Affiche le menu lorsque la checkbox est cochée */
+  .menu-checkbox:checked ~ nav {
+    display: flex;
+  }
 }
 
 /* Effets du toggle */
 header:has(.menu-checkbox:checked) {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .menu-checkbox:checked + .menu-toggle span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .menu-checkbox:checked + .menu-toggle span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .menu-checkbox:checked + .menu-toggle span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (max-width: 480px) {
-    .logo {
-        font-size: 1.2rem;
-    }
+  .logo {
+    font-size: 1.2rem;
+  }
 
-    nav ul li a {
-        font-size: 0.9rem;
-    }
+  nav ul li a {
+    font-size: 0.9rem;
+  }
 
-    button.signup {
-        font-size: 0.9rem;
-        padding: 6px 12px;
-    }
+  button.signup {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
 }
